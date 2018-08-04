@@ -1,0 +1,6 @@
+find_package(Boost 1.62 REQUIRED COMPONENTS unit_test_framework)
+
+add_executable(PortableWildcardsTest PortableWildcardsTest.cpp)
+target_link_libraries(PortableWildcardsTest PortableWildcards Boost::unit_test_framework)
+
+add_test(PortableWildcardsTest PortableWildcardsTest)
